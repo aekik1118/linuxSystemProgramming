@@ -22,9 +22,11 @@ int main(){
 
     if(nr == -1){
         printf("error\n");
+        perror("write");
     }
-    printf("success\n");
-
+    else{
+        printf("success\n");
+    }
     return 0;
 }
 
