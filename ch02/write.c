@@ -27,6 +27,11 @@ int main(){
     else{
         printf("success\n");
     }
+
+    if(close(fd) == -1){
+        perror("close");
+    }
+
     return 0;
 }
 

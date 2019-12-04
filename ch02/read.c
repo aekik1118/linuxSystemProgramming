@@ -37,6 +37,10 @@ int main(){
     printf("%s",buf2);	
     printf("%s",buf);
 
+    if(close(fd) == -1){
+        perror("close");
+    }
+
     return 0;
 }
 
